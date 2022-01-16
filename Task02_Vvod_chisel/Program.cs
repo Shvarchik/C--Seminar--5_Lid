@@ -1,6 +1,6 @@
 ﻿// Определить сколько чисел больше 0 введено с клавиатуры
 
-Console.WriteLine("Вводите чиcла или CTRL+Z to exit:");
+Console.WriteLine("Введите чиcла или CTRL+Z чтобы закончить:");
 string line;
 int count = 0;
 
