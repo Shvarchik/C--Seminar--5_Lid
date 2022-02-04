@@ -21,14 +21,14 @@ int[] ParseCoordinates(string str, int n)
     int[] coordinates = new int[n*2];
     int j = 0;
     string point = String.Empty;
-    for (int i = 0; i < str.Length; i++)
+    int i = 0;
+    while (i < str.Length && j < coordinates.Length)
     {
         while (i < str.Length && (str[i]!='(' && str[i]!=','))
-        {
             i++;
-        }
-        i++;
-        if (i < str.Length)
+
+        i++;                        // пропустить "(" или ","
+        if (i < str.Length)         // исключает вариант что дошли до конца строки
         {
             while (str[i]!=',' && str[i] !=')')
             {
@@ -38,7 +38,6 @@ int[] ParseCoordinates(string str, int n)
             coordinates[j] = int.Parse(point);
             j++;
             point = String.Empty;
-            i--;           
         }
     }
     return coordinates;
