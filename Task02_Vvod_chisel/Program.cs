@@ -1,4 +1,5 @@
 ﻿// Определить сколько чисел больше 0 введено с клавиатуры
+// Пусть пользователь вводит любое количество чисел, нажимая Enter после каждого
 
 Console.WriteLine("Введите чиcла или CTRL+Z чтобы закончить:");
 string line;
@@ -21,4 +22,4 @@ Console.WriteLine($"{count} чисел больше 0");
 //     }
 // } while (line != null);
 //
-// Console.WriteLine($"{count} чисел больше 0");
+// Console.WriteLine($"{count} чисел больше 0"); 
